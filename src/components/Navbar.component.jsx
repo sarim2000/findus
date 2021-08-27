@@ -1,19 +1,23 @@
 import { Navbar, Container, Nav } from "react-bootstrap";
-import { Lock } from "@styled-icons/material";
+import { Home } from "@styled-icons/fa-solid/Home";
+import { Opslevel } from "@styled-icons/simple-icons/Opslevel";
+import { Link } from "react-router-dom";
 export default function NavBar() {
 	return (
-		<Navbar bg="dark" variant="dark">
+		<Navbar bg="info" variant="dark" expand="lg">
 			<Container>
-				<Navbar.Brand href="#home">
-					<Lock />
-				</Navbar.Brand>
-				<Nav className="me-auto">
-					<Nav.Link href="#home">Leaderboard</Nav.Link>
-				</Nav>
-				<Navbar.Collapse className="justify-content-end">
-					<Navbar.Text>
-						Signed in as: <a href="#login">Mark Otto</a>
-					</Navbar.Text>
+				<Navbar.Brand href="/home">findUs</Navbar.Brand>
+				<Navbar.Collapse id="responsive-navbar-nav">
+					<Nav className="me-auto">
+						<Nav.Link>Levels</Nav.Link>
+						<Nav.Link>Leaderboard</Nav.Link>
+					</Nav>
+					<Nav>
+						<Nav.Link href="#deets">Sign Up</Nav.Link>
+						<Nav.Link eventKey={2} href="#memes">
+							Sign In
+						</Nav.Link>
+					</Nav>
 				</Navbar.Collapse>
 			</Container>
 		</Navbar>

@@ -1,14 +1,13 @@
 import "./App.css";
 import NavBar from "./components/Navbar.component";
+import { BrowserRouter } from "react-router-dom";
 
 function App() {
-	const onMouseCoor = (e) => {
-		console.log(e.clientX);
-	};
-
 	return (
-		<div onMouseDown={(e) => onMouseCoor(e)} className="App">
-			<NavBar />
+		<div>
+			<BrowserRouter>
+				<NavBar />
+			</BrowserRouter>
 		</div>
 	);
 }
