@@ -1,0 +1,14 @@
+.levelHeader {
+	text-align: center;
+	font-size: xx-large;
+
+	font-family: "Open Sans", sans-serif;
+}
+.levelPhotos {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+.levelImg img {
+	width: 100%;
+}
