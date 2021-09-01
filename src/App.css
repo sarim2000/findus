@@ -12,3 +12,36 @@
 .levelImg img {
 	width: 100%;
 }
+.levelImg {
+	position: relative;
+}
+.image1 {
+	cursor: zoom-in;
+}
+#search-box {
+	position: relative;
+	height: 2em;
+	width: 2em;
+	border-radius: 100%;
+	z-index: 100;
+	border-color: red;
+	border-style: solid;
+}
+
+#dp-box {
+	position: relative;
+	height: 2em;
+	width: 2em;
+	z-index: 1000;
+}
+.name {
+	margin-left: 20px;
+	margin-right: 20px;
+}
+.shown {
+	display: block;
+}
+
+.hidden {
+	display: none;
+}
