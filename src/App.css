@@ -11,12 +11,13 @@
 }
 .levelImg img {
 	width: 100%;
+	height: 100%;
 }
 .levelImg {
 	position: relative;
 }
-.image1 {
-	cursor: zoom-in;
+#picture {
+	cursor: pointer;
 }
 #search-box {
 	position: relative;

@@ -31,7 +31,7 @@ export default function Levels() {
 							>
 								Waldo
 							</span>{" "}
-							is.
+							(👈🏽‍click on me) is.
 						</h3>
 					</li>
 					<Overlay target={target.current} show={show} placement="right">
@@ -46,7 +46,7 @@ export default function Levels() {
 					</li>
 					<li>
 						<h3>
-							What are you waiting for? Pick one and prove you got the{" "}
+							What are you waiting for? Pick one level and prove you got the{" "}
 							<span
 								style={{ textDecoration: "underline", cursor: "pointer" }}
 								onClick={() =>
@@ -61,7 +61,7 @@ export default function Levels() {
 					</li>
 				</ul>
 			</section>
-			<section className="levelPhotos">
+			<section className="levelPhotos" style={{ marginBottom: "2em" }}>
 				<Figure>
 					<Link to="/level/1">
 						<Figure.Image width={471} height={680} alt="171x180" src={level1} />
